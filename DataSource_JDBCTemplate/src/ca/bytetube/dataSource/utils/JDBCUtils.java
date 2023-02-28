@@ -1,16 +1,19 @@
-package ca.bytetube.utils;
+package ca.bytetube.dataSource.utils;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+
+import javax.sql.DataSource;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.sql.*;
 import java.util.Properties;
 
 public class JDBCUtils {
-    private static String url;
-    private static String user;
-    private static String password;
-    private static String driver;
+    //1.定义DataSource
+
+    private static DataSource ds;
 
     //文件读取，读取一次拿到信息
     static {
@@ -19,27 +22,32 @@ public class JDBCUtils {
         Properties properties = new Properties();
 
         //2.获取src路径下的文件
-        ClassLoader classLoader = JDBCUtils.class.getClassLoader();
-        URL resource = classLoader.getResource("jdbc.properties");
-        String path = resource.getPath();
+            ClassLoader classLoader = JDBCUtils.class.getClassLoader();
+            InputStream is = classLoader.getResourceAsStream("druid.properties");
             //3.夹在文件
-            properties.load(new FileReader(path));
+            properties.load(is);
 
-            //4.获取数据
-            url = properties.getProperty("url");
-            user = properties.getProperty("user");
-            password = properties.getProperty("password");
-            driver = properties.getProperty("driver");
+
+
+             ds = DruidDataSourceFactory.createDataSource(properties);
+
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
 
-
     }
 
+    public static DataSource getDataSource(){
+        return ds;
+    }
+
+
+
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url,user,password);
+        return ds.getConnection();
     }
 
     //conn, stmt
