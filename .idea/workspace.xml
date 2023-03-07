@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="test:war exploded" />
+      <artifact name="tomcat&amp;servlet:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a9be508a-e213-4f7c-8c04-0c6c65d482c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/druid_1_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_37_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/DataSource_JDBCTemplate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/c3p0-0.9.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/druid-1.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/mchange-commons-java-0.2.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/mysql-connector-java-5.1.37-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/spring-beans-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/spring-core-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/spring-jdbc-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/libs/spring-tx-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/c3p0-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/JDBCTemplate/JdbcTemplateCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/JDBCTemplate/QuickStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/dataSource/c3p0/PoolSizeTimeOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/dataSource/c3p0/QuickStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/dataSource/druid/QuickStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/dataSource/druid/QuickStartByJdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/dataSource/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/ca/bytetube/domain/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataSource_JDBCTemplate/src/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/src/ca/bytetube/jdbc/TransactionJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/test_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tomcat_servlet_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomcat&amp;servlet/src/ca/bytetube/web/QuickStartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomcat&amp;servlet/tomcat&amp;servlet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomcat&amp;servlet/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tomcat&amp;servlet/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/src/ca/bytetube/utils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/src/ca/bytetube/utils/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jdbc/ca/bytetube/jdbc/JdbcLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jdbc/ca/bytetube/jdbc/JdbcLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jdbc/ca/bytetube/utils/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jdbc/ca/bytetube/utils/JDBCUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jdbc/META-INF/jdbc.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,17 +28,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="2M6WXhxp1mXT3wETK9xmWW0JXHl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -63,6 +56,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/DataSource_JDBCTemplate/libs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -90,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTemplateCRUD.queryForCount">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.56">
     <configuration name="JDBCLogin" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.jdbc.JDBCLogin" />
       <module name="jdbc" />
@@ -184,6 +180,167 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 8.5.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.56" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="update-resources" />
+      <deployment>
+        <artifact name="test:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+        <artifact name="tomcat&amp;servlet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/tomcat_servlet" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_56_framework_project_16" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54957" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="test:war exploded" />
+          <artifact name="tomcat&amp;servlet:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.87" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.87" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="tomcat&amp;servlet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/tomcat_servlet" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_87_framework_project_16" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56777" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="tomcat&amp;servlet:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JDBCLogin" />
+      <item itemvalue="JUnit.JdbcTemplateCRUD.delete" />
+      <item itemvalue="JUnit.JdbcTemplateCRUD.queryForCount" />
+      <item itemvalue="JUnit.JdbcTemplateCRUD.queryForList" />
+      <item itemvalue="JUnit.JdbcTemplateCRUD.queryForListObj_2" />
+      <item itemvalue="JUnit.JdbcTemplateCRUD.update" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.56" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.87" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.JdbcTemplateCRUD.queryForCount" />
@@ -207,8 +364,17 @@
       <workItem from="1677088560574" duration="7998000" />
       <workItem from="1677106894484" duration="8746000" />
       <workItem from="1677527070502" duration="596000" />
-      <workItem from="1677538515186" duration="11083000" />
+      <workItem from="1677538515186" duration="11178000" />
+      <workItem from="1678137519263" duration="7298000" />
     </task>
+    <task id="LOCAL-00001" summary="completed JDBC">
+      <created>1677556824279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677556824279</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,5 +392,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed JDBC" />
   </component>
 </project>
