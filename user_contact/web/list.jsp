@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -26,6 +27,9 @@
 <body>
 <div class="container">
     <h3 style="text-align: center">user list info</h3>
+    <tr>
+        <td colspan="8" align="center"><a class="btn btn-primary" href="add.jsp">add contact</a></td>
+    </tr>
     <table border="1" class="table table-bordered table-hover">
         <tr class="success">
             <th>id</th>
@@ -37,51 +41,64 @@
             <th>email</th>
             <th>operation</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>sam</td>
-            <td>male</td>
-            <td>20</td>
-            <td>trt</td>
-            <td>44444222</td>
-            <td>sam@gmail.com</td>
-            <td><a class="btn btn-default btn-sm" href="update.jsp">modify</a>&nbsp;<a class="btn btn-default btn-sm" href="">del</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>tony</td>
-            <td>male</td>
-            <td>22</td>
-            <td>van</td>
-            <td>4447222</td>
-            <td>tony@gmail.com</td>
-            <td><a class="btn btn-default btn-sm" href="update.jsp">modify</a>&nbsp;<a class="btn btn-default btn-sm" href="">del</a></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>susan</td>
-            <td>female</td>
-            <td>20</td>
-            <td>mtl</td>
-            <td>3467890</td>
-            <td>susan@gmail.com</td>
-            <td><a class="btn btn-default btn-sm" href="update.jsp">modify</a>&nbsp;<a class="btn btn-default btn-sm" href="">del</a></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>alida</td>
-            <td>female</td>
-            <td>43</td>
-            <td>van</td>
-            <td>3278902</td>
-            <td>alida@gmail.com</td>
-            <td><a class="btn btn-default btn-sm" href="update.jsp">modify</a>&nbsp;<a class="btn btn-default btn-sm" href="">del</a></td>
-        </tr>
+
+        <c:forEach items="${requestScope.pb.list}" var="user" varStatus="vs">
+            <tr>
+                <td>${vs.count}</td>
+                <td>${user.name}</td>
+                <td>${user.sex}</td>
+                <td>${user.age}</td>
+                <td>${user.address}</td>
+                <td>${user.facebook}</td>
+                <td>${user.email}</td>
+                <td><a class="btn btn-default btn-sm" href="update.jsp">modify</a>&nbsp;<a class="btn btn-default btn-sm" href="">del</a></td>
+            </tr>
+        </c:forEach>
+
        
-        <tr>
-            <td colspan="8" align="center"><a class="btn btn-primary" href="add.jsp">add contact</a></td>
-        </tr>
+
     </table>
+    <div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+
+                <c:if test="${pb.curPage == 1}">
+                    <li class="disabled">
+                </c:if>
+
+                    <c:if test="${pb.curPage != 1}">
+                    <li>
+                        </c:if>
+
+
+                    <a href="${pageContext.request.contextPath}/FindUserByPageServlet?curPage=${pb.curPage - 1}&rows=5" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+
+                <c:forEach begin="1" end="${pb.totalPage}" var="i">
+                    <c:if test="${pb.curPage == i}">
+                    <li class="active"><a href="${pageContext.request.contextPath}/FindUserByPageServlet?curPage=${i}&rows=5">${i}</a></li>
+                    </c:if>
+
+                    <c:if test="${pb.curPage != i}">
+                        <li><a href="${pageContext.request.contextPath}/FindUserByPageServlet?curPage=${i}&rows=5">${i}</a></li>
+                    </c:if>
+                </c:forEach>
+                <li>
+                    <a href="${pageContext.request.contextPath}/FindUserByPageServlet?curPage=${pb.curPage + 1}&rows=5" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+
+                <span style="font-size: 25px; margin-left: 10px">
+                    ${requestScope.pb.totalCount} records, ${requestScope.pb.totalPage} pages
+                </span>
+
+            </ul>
+        </nav>
+    </div>
 </div>
 </body>
 </html>

@@ -1,11 +1,14 @@
-package ca.bytetube.dataSource.utils;
+package ca.bytetube.utils;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.InputStream;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 public class JDBCUtils {
@@ -119,6 +122,11 @@ public class JDBCUtils {
 
 
     }
+
+//    public static void main(String[] args) throws SQLException {
+//        Connection connection = JDBCUtils.getConnection();
+//        System.out.println(connection);
+//    }
 
 
 

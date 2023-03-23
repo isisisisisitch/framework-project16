@@ -18,7 +18,7 @@
 <body>
 <div align="center">
   <a
-          href="list.jsp" style="text-decoration:none;font-size:33px"> Query all users info
+          href="${pageContext.request.contextPath}/FindUserByPageServlet" style="text-decoration:none;font-size:33px"> Query all users info
   </a>
 </div>
 </body>

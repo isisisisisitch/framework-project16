@@ -1,0 +1,13 @@
+1.MVC model
+M(model):represent business layer of application
+V(view):represent presentation layer of application
+C(controller):manage the flow of application
+done
+
+2.el(expression language)
+done
+
+3.jstl
+done
+
+4.user contact
